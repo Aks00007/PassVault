@@ -5,9 +5,10 @@ import { __unstable__loadDesignSystem } from 'tailwindcss';
 import { v4 as uuidv4 } from 'uuid';
 import show from '../assets/show.png'
 import hidden from '../assets/hidden.png'
+import add from '../assets/add.gif'
 import copy from '../assets/copy.gif'
-import edit from '../assets/edit1.png'
-import bin from '../assets/bin1.png'
+import edit from '../assets/edit.gif'
+import bin from '../assets/bin.gif'
 
 const Manager = () => {
     const ref = useRef();
@@ -150,13 +151,7 @@ const Manager = () => {
                         </div>
                     </div>
                     <button onClick={savePassword} className='flex justify-center items-center bg-gray-600 hover:bg-gray-500 rounded-full px-8 py-2 w-fit cursor-pointer gap-2 border border-black'>
-                        {/* <img src="/src/assets/add.gif" alt="add" width={32} /> */}
-                        <lord-icon
-                            src="https://cdn.lordicon.com/sbnjyzil.json"
-                            trigger="hover"
-                            stroke="bold"
-                            colors="primary:#121331,secondary:#30c9e8">
-                        </lord-icon>
+                        <img src={add} alt="add" width={32} />
                         Save</button>
                 </div>
 
