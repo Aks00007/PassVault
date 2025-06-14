@@ -174,7 +174,7 @@ const Manager = () => {
                                         <div className='flex justify-between items-center'>
                                             <a /*href={item.site} target='_blank'*/>{item.site}</a>
                                             <div className='size-7' onClick={() => { copyText(item.site) }} >
-                                                <img src="/src/assets/copy.png" alt="copy" className='cursor-pointer' />
+                                                <img src="/src/assets/copy1.png" alt="copy" className='cursor-pointer' />
                                             </div>
                                         </div>
                                     </td>
@@ -182,7 +182,7 @@ const Manager = () => {
                                         <div className='flex justify-between items-center'>
                                             <span>{item.username}</span>
                                             <div className='size-7' onClick={() => { copyText(item.username) }}>
-                                                <img src="/src/assets/copy.png" alt="copy" className='cursor-pointer' />
+                                                <img src="/src/assets/copy1.png" alt="copy" className='cursor-pointer' />
                                             </div>
                                         </div>
                                     </td>
@@ -190,13 +190,13 @@ const Manager = () => {
                                         <div className='flex justify-between items-center'>
                                             <span>{item.password}</span>
                                             <div className='size-7' onClick={() => { copyText(item.password) }}>
-                                                <img src="/src/assets/copy.png" alt="copy" className='cursor-pointer' />
+                                                <img src="/src/assets/copy1.png" alt="copy" className='cursor-pointer' />
                                             </div>
                                         </div>
                                     </td>
                                     <td className='flex justify-center items-center p-2 border border-white text-center w-auto'>
-                                        <span className='cursor-pointer mx-1 w-7' onClick={() => { editPassword(item.id) }}><img src="/src/assets/edit.png" alt="edit" /></span>
-                                        <span className='cursor-pointer mx-1 w-7' onClick={() => { deletePassword(item.id) }}><img src="/src/assets/bin.png" alt="delete" /></span>
+                                        <span className='cursor-pointer mx-1 w-7' onClick={() => { editPassword(item.id) }}><img src="/src/assets/edit1.png" alt="edit" /></span>
+                                        <span className='cursor-pointer mx-1 w-7' onClick={() => { deletePassword(item.id) }}><img src="/src/assets/bin1.png" alt="delete" /></span>
                                     </td>
                                 </tr>
                             })}
