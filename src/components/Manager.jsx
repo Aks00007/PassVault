@@ -4,7 +4,6 @@ import { ToastContainer, toast, Bounce } from 'react-toastify';
 import { __unstable__loadDesignSystem } from 'tailwindcss';
 import { v4 as uuidv4 } from 'uuid';
 import show from '../assets/show.png'
-import hidden from '../assets/hidden.png'
 import copy from '../assets/copy1.png'
 import edit from '../assets/edit1.png'
 import bin from '../assets/bin1.png'
@@ -41,11 +40,11 @@ const Manager = () => {
     const showPassword = () => {
         passwordRef.current.type = "text"
         if (ref.current.src.includes("/src/assets/hidden.png")) {
-            ref.current.src = {show}
+            ref.current.src = show
             passwordRef.current.type = "password"
         }
         else {
-            ref.current.src = {hidden}
+            ref.current.src = "/src/assets/hidden.png"
             passwordRef.current.type = "text"
         }
     }
