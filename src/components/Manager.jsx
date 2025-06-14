@@ -170,7 +170,7 @@ const Manager = () => {
                         <tbody className='bg-gray-100'>
                             {passwordArray.map((item, index) => {
                                 return <tr key={index}>
-                                    <td className='p-2 border border-white text-center w-xl'>
+                                    <td className='p-2 border border-white text-center w-3xl'>
                                         <div className='flex justify-between items-center'>
                                             <a /*href={item.site} target='_blank'*/>{item.site}</a>
                                             <div className='size-8' onClick={() => { copyText(item.site) }} >
@@ -178,7 +178,7 @@ const Manager = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='p-2 border border-white text-center w-32'>
+                                    <td className='p-2 border border-white text-center w-40'>
                                         <div className='flex justify-between items-center'>
                                             <span>{item.username}</span>
                                             <div className='size-8' onClick={() => { copyText(item.username) }}>
@@ -186,7 +186,7 @@ const Manager = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='p-2 border border-white text-center w-32'>
+                                    <td className='p-2 border border-white text-center w-40'>
                                         <div className='flex justify-between items-center'>
                                             <span>{item.password}</span>
                                             <div className='size-8' onClick={() => { copyText(item.password) }}>
@@ -194,7 +194,7 @@ const Manager = () => {
                                             </div>
                                         </div>
                                     </td>
-                                    <td className='flex justify-center items-center p-3 border border-white text-center w-auto'>
+                                    <td className='flex justify-center items-center py-2 border border-white text-center w-auto'>
                                         <span className='cursor-pointer mx-1 w-8' onClick={() => { editPassword(item.id) }}><img src={edit} alt="edit" /></span>
                                         <span className='cursor-pointer mx-1 w-8' onClick={() => { deletePassword(item.id) }}><img src={bin} alt="delete" /></span>
                                     </td>
