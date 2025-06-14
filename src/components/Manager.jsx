@@ -167,7 +167,7 @@ const Manager = () => {
                                         <div className='flex justify-between items-center'>
                                             <a /*href={item.site} target='_blank'*/>{item.site}</a>
                                             <div className='size-7' onClick={() => { copyText(item.site) }} >
-                                                <img src="/src/assets/copy.gif" alt="copy" className='cursor-pointer' />
+                                                <img src="https://raw.githubusercontent.com/Aks00007/PassVault/src/assets/add.gif" alt="copy" className='cursor-pointer' />
                                             </div>
                                         </div>
                                     </td>
