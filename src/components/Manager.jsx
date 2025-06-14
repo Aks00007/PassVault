@@ -5,7 +5,7 @@ import { __unstable__loadDesignSystem } from 'tailwindcss';
 import { v4 as uuidv4 } from 'uuid';
 import show from '../assets/show.png'
 import hidden from '../assets/hidden.png'
-import copy from '../assets/copy1.png'
+import copy from '../assets/copy.gif'
 import edit from '../assets/edit1.png'
 import bin from '../assets/bin1.png'
 
