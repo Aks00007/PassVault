@@ -188,7 +188,7 @@ const Manager = () => {
                                     </td>
                                     <td className='p-2 border border-white text-center'>
                                         <div className='flex justify-between items-center'>
-                                            <span>{item.password}</span>
+                                            <span>{"*".repeat(item.password.length)}</span>
                                             <div className='size-8' onClick={() => { copyText(item.password) }}>
                                                 <img src={copy} alt="copy" className='cursor-pointer' />
                                             </div>
